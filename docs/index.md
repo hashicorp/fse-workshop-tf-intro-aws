@@ -43,9 +43,13 @@ Jay Aware
 - Splunk, NIH
 - Favorite Text Editor: vi (can't figure out how to exit)
 
-Greg Thomas | Federal SE
+Other Federal SEs:
 
-Ryan Wagner | Federal SE
+Greg Thomas 
+
+Ryan Wagner 
+
+Dan Fedick 
 
 ???
 Use this slide to introduce yourself, give a little bit of your background story, then go around the room and have all your participants introduce themselves.
