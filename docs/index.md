@@ -435,28 +435,28 @@ class: title
 ---
 name: HashiCorp-Intro1
 # HashiCorp Intro
-.center[![:scale 60%](images/hashi_1.png)]
+.center[![:scale 100%](images/hashi_1.png)]
 
 ???
 **We build tools for practitioners, and these are used extensively. There’s a good chance engineers at your company use our tools today; many of these projects have been downloaded millions of times. They are foundational tools for the most important workflows for organizations large and small.**
 
 ---
 name: HashiCorp-Intro2
-.center[![:scale 60%](images/hashi_2.png)]
+.center[![:scale 100%](images/hashi_2.png)]
 
 ???
 **What is the Cloud Operating Model? To understand that, we have to step back a bit and talk about this generational shift in computing.**
 
 ---
 name: HashiCorp-Intro3
-.center[![:scale 60%](images/hashi_3.png)]
+.center[![:scale 100%](images/hashi_3.png)]
 
 ???
 **Your applications - systems of record running on-prem, and systems of engagement running in elastic public clouds - are now running on dynamic infrastructure. These clouds support a rapid pace of change, which is fantastic for innovation. This shift is happening everywhere. And as organizations dig in to this shift, things are even more complicated in a multi-cloud world.**
 
 ---
 name: HashiCorp-Intro4
-.center[![:scale 60%](images/hashi_4.png)]
+.center[![:scale 100%](images/hashi_4.png)]
 
 ???
 **Provision: each has a unique tool to provision fleets of any size on-demand**
@@ -468,7 +468,7 @@ name: HashiCorp-Intro4
 
 ---
 name: HashiCorp-Intro5
-.center[![:scale 60%](images/hashi_5.png)]
+.center[![:scale 100%](images/hashi_5.png)]
 
 ???
 **There’s a bit more to the picture too. Each cloud may be different, but they do all have one thing in common: they support a new control point at each layer.**
@@ -484,7 +484,7 @@ name: HashiCorp-Intro5
 
 ---
 name: HashiCorp-Intro6
-.center[![:scale 60%](images/hashi_6.png)]
+.center[![:scale 100%](images/hashi_6.png)]
 
 ???
 **So, How do you interface with multi-cloud infrastructure with consistency? You establish central shared service platform with a single control plane.**
@@ -499,14 +499,14 @@ name: HashiCorp-Intro6
 
 ---
 name: HashiCorp-Intro7
-.center[![:scale 60%](images/hashi_7.png)]
+.center[![:scale 100%](images/hashi_7.png)]
 
 ???
 **It's really an approach to enable all of your teams to run provisioning, security, networking, and runtime through a single control plane at every layer. This approach helps all of your developers and practitioners to be more productive, and it connects them in meaningful ways to the cloud that matter.**
 
 ---
 name: HashiCorp-Intro8
-.center[![:scale 60%](images/hashi_8.png)]
+.center[![:scale 100%](images/hashi_8.png)]
 
 ???
 **But let's focus on the major scenarios we can help with. Let’s start at the bottom and work up.**
@@ -521,7 +521,7 @@ name: HashiCorp-Intro8
 
 ---
 name: HashiCorp-Intro9
-.center[![:scale 60%](images/hashi_9.png)]
+.center[![:scale 100%](images/hashi_9.png)]
 
 ???
 **The Cloud Operating Model is a fantastic way to unify many different parts of your cloud strategy. And that's exactly what we're going to focus on today: How to simplify cloud infrastructure deployments with Terraform**
