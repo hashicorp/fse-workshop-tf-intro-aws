@@ -734,7 +734,7 @@ name: lab-exercise-1
 <br><br>
 In this lab you'll learn how to set up your editor, use the Terraform command line tool, integrate with AWS, and do a few dry runs with different settings.
 
-Access your lab environment: [https://bit.ly/3os8rX1](https://bit.ly/3os8rX1)
+Access your lab environment: [https://bit.ly/3tbsTOs](https://bit.ly/3tbsTOs)
 
 🛑 **STOP** after you complete the second quiz.
 ---
