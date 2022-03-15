@@ -435,7 +435,7 @@ class: title
 ---
 name: HashiCorp-Intro1
 # HashiCorp Intro
-.center[![:scale 100%](images/hashi_1.png)]
+.center[![:scale 90%](images/hashi_1.png)]
 
 ???
 **We build tools for practitioners, and these are used extensively. There’s a good chance engineers at your company use our tools today; many of these projects have been downloaded millions of times. They are foundational tools for the most important workflows for organizations large and small.**
