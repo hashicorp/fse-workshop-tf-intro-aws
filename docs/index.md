@@ -1316,5 +1316,5 @@ Your feedback is important to us!
 
 The survey is short, we promise:
 
-## https://bit.ly/hashiworkshopfeedback
+## https://forms.gle/ahJJvHZ5SS9U8SBQ7
 ]
