@@ -43,9 +43,7 @@ Jay Aware
 - Splunk, NIH
 - Favorite Text Editor: vi (can't figure out how to exit)
 
-Jason McCoy | Partner SE
-
-Luke McCleary | Federal SE
+Greg Thomas | Federal SE
 
 Ryan Wagner | Federal SE
 
@@ -70,7 +68,7 @@ Follow along on your own computer at this link:
 name: Table-of-Contents
 # Table of Contents
 
-1. Intro to Terraform
+1. Intro to HashiCorp & Terraform
 1. Terraform Basics<br>
 👩‍🔬 **Lab - Setup and Basic Usage**
 1. Terraform In Action: plan, apply, destroy
@@ -427,20 +425,109 @@ Name: Why-Terraform-on-AWS
 **Every modern IT organization has to deal with risk. It's a balancing act between security and usability. You can make it so secure nobody can use it, or on the other end you have a free for all where users can do whatever they want, but are putting the entire cloud account in jeopardy due to risky behavior. Terraform allows you to reduce risk by abstracting your users away from the web UI or API. Instead we provide a safe, auditable abstraction layer that lets users get their work done in a secure and safe way, that doesn't grant unnecessary privileged access.**
 
 ---
-name: Live-Demo
+name: HashiCorp-Intro0
 class: title
-# Live Demo
+# Great, but who are you?
 
 ???
-**Let's do a short demo! I'm going to show you how easy it can be to provision infrastructure in AWS. I'll do the demo on one of the lab workstations that you'll be using for this training.**
-
-**This is a workstation just like the ones you'll be using for today's workshops. I'm going to run a terraform apply command to build out the lab environment. We're actually cheating a little bit here, as we prebaked most of the environment before class to save us some time. Just like your favorite cooking show!**
-
-**You can see the results of the Terraform run here in my shell. This output is showing me the URL of the application server I just built. And if we pop over here to the AWS portal you'll see all of the different parts of my lab environment.**
-
-**This is Infrastructure as code. By the end of today's training you'll be able to create your own infrastructure using Terraform.**
+**So, who is HashiCorp?**
 
 ---
+name: HashiCorp-Intro1
+# HashiCorp Intro
+.center[![:scale 60%](images/hashi_1.png)]
+
+???
+**We build tools for practitioners, and these are used extensively. There’s a good chance engineers at your company use our tools today; many of these projects have been downloaded millions of times. They are foundational tools for the most important workflows for organizations large and small.**
+
+---
+name: HashiCorp-Intro2
+.center[![:scale 60%](images/hashi_2.png)]
+
+???
+**What is the Cloud Operating Model? To understand that, we have to step back a bit and talk about this generational shift in computing.**
+
+---
+name: HashiCorp-Intro3
+.center[![:scale 60%](images/hashi_3.png)]
+
+???
+**Your applications - systems of record running on-prem, and systems of engagement running in elastic public clouds - are now running on dynamic infrastructure. These clouds support a rapid pace of change, which is fantastic for innovation. This shift is happening everywhere. And as organizations dig in to this shift, things are even more complicated in a multi-cloud world.**
+
+---
+name: HashiCorp-Intro4
+.center[![:scale 60%](images/hashi_4.png)]
+
+???
+**Provision: each has a unique tool to provision fleets of any size on-demand**
+
+??? **Secure: each has a distinct IDENTITY model**
+??? **Connect: each has a proprietary networking model which has given rise to the need for Service-based overlay models**
+??? **Run: they all have multiple offerings here. Container-based offerings are key, but they also all are investing heavily in emerging concepts such as Serverless which represent the logical evolution at that layer.**
+??? **The challenge then for any enterprise Ops and Security team is: how do I reconcile this reality?**
+
+---
+name: HashiCorp-Intro5
+.center[![:scale 60%](images/hashi_5.png)]
+
+???
+**There’s a bit more to the picture too. Each cloud may be different, but they do all have one thing in common: they support a new control point at each layer.**
+???
+**This just underscores how architectures are different in a dynamic world.**
+
+??? **Instead of monolith apps deploying to a web server every few months, you have containers delivered continuously.**
+??? **Networking now revolves around loosely coupled services, and a service registry is the foundation for modern cloud networking.**
+??? **Security is now about “who” you are, not “where” you are.**
+??? **And Infrastructure as code enables the rapid provisioning and automation that supports everything above it.**
+
+??? **How can you account for the differences in APIs with the similarity in control point? That’s exactly what HashiCorp has done.**
+
+---
+name: HashiCorp-Intro6
+.center[![:scale 60%](images/hashi_6.png)]
+
+???
+**So, How do you interface with multi-cloud infrastructure with consistency? You establish central shared service platform with a single control plane.**
+
+??? **Your goal should be to establish a central shared service platform with a single control plane, across all four of these layers.**
+??? **What’s happening is each cloud infrastructure has a different API for each of these four layers. Different technologies native to each island of compute.**
+
+??? **Which brings us to the Cloud Operating Model.**
+
+
+**
+
+---
+name: HashiCorp-Intro7
+.center[![:scale 60%](images/hashi_7.png)]
+
+???
+**It's really an approach to enable all of your teams to run provisioning, security, networking, and runtime through a single control plane at every layer. This approach helps all of your developers and practitioners to be more productive, and it connects them in meaningful ways to the cloud that matter.**
+
+---
+name: HashiCorp-Intro8
+.center[![:scale 60%](images/hashi_8.png)]
+
+???
+**But let's focus on the major scenarios we can help with. Let’s start at the bottom and work up.**
+
+??? **Terraform provides the foundation for cloud infrastructure automation using infrastructure-as-code for provisioning and compliance in the cloud operating model**
+
+??? **Vault: In the traditional high-trust model, a requestor or application makes the request of a backend system and would give the credentials required to get the data. This is how the vast majority of high profile security breaches have occurred. In the cloud, we need a low or zero trust network. Vault intelligently acts as an intermediary to tightly control access to secrets & systems**
+
+??? **Consul:**
+
+??? **Nomad: allows organizations to keep a single workflow before, during and after their application & workload migration journey. Nomad can orchestrate existing infrastructure without the need to force containerization or rewrite them**
+
+---
+name: HashiCorp-Intro9
+.center[![:scale 60%](images/hashi_9.png)]
+
+???
+**The Cloud Operating Model is a fantastic way to unify many different parts of your cloud strategy. And that's exactly what we're going to focus on today: How to simplify cloud infrastructure deployments with Terraform**
+
+---
+
 
 name: Chapter-2
 class: title
@@ -456,11 +543,11 @@ class: img-left
 # What is Terraform?
 ![Terraform](images\Terraform_VerticalLogo_FullColor.png)
 
-Terraform is an open source provisioning tool.
+Terraform is a provisioning tool.
 
 It ships as a single binary which is written in Go. Terraform is cross platform and can run on Linux, Windows, or MacOS.
 
-Installing terraform is easy. You simply download a zip file, unzip it, and run it.
+Installing Terraform is easy. You simply download a zip file, unzip it, and run it.
 
 ---
 name: terraform-command-line
