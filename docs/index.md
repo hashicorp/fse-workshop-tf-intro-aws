@@ -1303,6 +1303,22 @@ Link to this Slide Deck<br>
 https://bit.ly/3B3qIyS
 
 ---
+name: upcoming-events
+class: compact
+# Upcoming Events
+If you'd like to learn more about Terraform on AWS try the links below:
+
+April 7: HashiCorp Vault + AWS Solution Deep Dive<br>
+http://events.hashicorp.com/deepdive/vault-on-aws-april7
+
+May 5: HashiCorp Vault + AWS Immersion Day<br>
+http://events.hashicorp.com/immersionday/vault-on-aws-may5
+
+May 23-25: AWS Public Sector Summit - Washington DC (Washington Convention Center)  
+You can find us in the Carahsoft Pavilion<br>
+https://aws.amazon.com/events/summits/washington-dc/
+
+---
 name: additional-resources-acctteam
 
 # Hashicorp Account Team
